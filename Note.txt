@@ -1,0 +1,28 @@
+cors
+csrf-cross site request forgery
+sandbox-yesle jastai ki euta computer ma multiple tabs kholeko x vane harek euta tab lai isolate garx jstai ki euta tab ma data x vane arko tab tyo data hudaina sabai isolate hunx
+SOP policy---> reqire three rules:
+1)protocol same hunu parx https://nics.com https://nic.com  ✅
+2) hostname pani same hunu parx https://nics.com https://nic.com  ❌
+3) port no same hunu parx https://nics.com running in port 4000 https://nic.com running in port 5173  ❌
+SOP dherai nai strict vayo tei vayer cors ko introduced vayo
+cors-yesma chai hamle whitelist blacklist garna milx vane kun api lai access dine kun api lai access nadine
+
+CORS
+CSRF (Cross-Site Request Forgery)
+Sandbox – It is similar to when you open multiple tabs on a computer; each tab is isolated from the others. For example, if there is some data in one tab, that data won't be accessible from another tab — everything stays isolated.
+
+SOP (Same-Origin Policy) — It requires three rules:
+
+Same Protocol must be used.
+Example: https://nics.com and https://nic.com — ✅ (protocol is the same but hostname differs).
+
+Same Hostname must be used.
+Example: https://nics.com and https://nic.com — ❌ (different hostnames).
+
+Same Port Number must be used.
+Example: https://nics.com running on port 4000 and https://nic.com running on port 5173 — ❌ (different ports).
+
+Since SOP was very strict, CORS (Cross-Origin Resource Sharing) was introduced.
+
+CORS — Here, we can define a whitelist (allowing certain APIs) and a blacklist (blocking certain APIs). This means we can control which APIs are allowed access and which are denied.

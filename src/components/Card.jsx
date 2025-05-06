@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Card = () => {
+const Card = ({blog}) => {
   return (
    <>
-    <div className="flex px-3 py-3">
+   <Link to={`/blog/${blog._id}`}>
+    <div className="flex px-3 py-3 m-9">
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img className="w-full" src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-blogging_516790-1495.jpg?semt=ais_hybrid&w=740" alt="Sunset in the mountains" />
+        <img className="w-full h-100 object-cover" src={blog.image} />
         <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div className="font-bold text-xl mb-2">{blog.title}</div>
             <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
+                {blog.description}
             </p>
         </div>
         <div className="px-6 py-4">
@@ -20,6 +21,7 @@ const Card = () => {
         </div>
     </div>
 </div>
+</Link>
    </>
   )
 }
