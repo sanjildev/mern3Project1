@@ -14,7 +14,7 @@ const SingleBlog = () => {
     const deleteBlog=async()=>{
         const response=await axios.delete(`https://mern3-0.onrender.com/blog/${id}`)
         if(response.status===200){
-            alert("your blog has been deleted successfully!!")
+            alert("your photo has been deleted successfully!!")
             navigate('/')
         }
         else{

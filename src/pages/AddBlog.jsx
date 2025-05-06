@@ -26,7 +26,7 @@ setData({...data,[name]:name==="image" ? e.target.files[0] :value})
     }
    })
    if(response.status===201){
-    alert('book created successfuly!!')
+    alert('photo created successfuly!!')
     navigate('/')
    }
    else{

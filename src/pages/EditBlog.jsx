@@ -24,7 +24,7 @@ const EditBlog = () => {
       }
     })
     if(response.status===200){
-      alert('boks has been edited!!')
+      alert('photo has been edited!!')
 navigate('/')
     }
     else{
