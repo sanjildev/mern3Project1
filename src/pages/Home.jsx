@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 const Home = () => {
   const [blogs,setBlogs]=useState([])
     const fetchBlogs=async()=>{
-        const response=await axios.get('http://localhost:3000/blog')
+        const response=await axios.get('https://mern3-0.onrender.com/blog')
         setBlogs(response.data.data)
     }
     useEffect(()=>{

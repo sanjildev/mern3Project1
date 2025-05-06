@@ -8,11 +8,11 @@ const SingleBlog = () => {
     const navigate=useNavigate()
     const [singleBLog,setSingleBlog]=useState({})
     const fetchSingleBlog=async()=>{
-        const response=await axios.get(`http://localhost:3000/blog/${id}`)
+        const response=await axios.get(`https://mern3-0.onrender.com/blog/${id}`)
         setSingleBlog(response.data.data)
     }
     const deleteBlog=async()=>{
-        const response=await axios.delete(`http://localhost:3000/blog/${id}`)
+        const response=await axios.delete(`https://mern3-0.onrender.com/blog/${id}`)
         if(response.status===200){
             alert("your blog has been deleted successfully!!")
             navigate('/')
