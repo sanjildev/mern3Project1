@@ -38,7 +38,7 @@ setData({...data,[name]:name==="image" ? e.target.files[0] :value})
   <>
   <Navbar/>
          <form className="max-w-md  mx-auto mt-20 p-6 bg-white border rounded-lg shadow-lg" onSubmit={createBlog}>
-    <h2 className="text-2xl text-center font-bold mb-6">Add Blog</h2>
+    <h2 className="text-2xl text-center font-bold mb-6">Add Photo</h2>
     <div className="mb-4">
         <label className="block text-gray-700 font-bold mb-2" for="title">
       Title:

@@ -37,10 +37,10 @@ fetchSingleBlog()
                 </div>
                 <div className="flex -mx-2 mb-4">
                     <div className="w-1/2 px-2">
-                      <Link to={`/editBlog/${id}`} > <button className="w-full cursor-pointer bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Edit Blog</button></Link>
+                      <Link to={`/editBlog/${id}`} > <button className="w-full cursor-pointer bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Edit Photo</button></Link>
                     </div>
                     <div className="w-1/2 px-2">
-                        <button className="w-full cursor-pointer bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600" onClick={deleteBlog}>Delete Blog</button>
+                        <button className="w-full cursor-pointer bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600" onClick={deleteBlog}>Delete Photo</button>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ fetchSingleBlog()
                 </p>
             
                 <div>
-                    <span className="font-bold text-gray-700 dark:text-gray-300">Blog Description:</span>
+                    <span className="font-bold text-gray-700 dark:text-gray-300">Photo Description:</span>
                     <p className="text-gray-600 dark:text-gray-300 text-sm mt-2">
                         {singleBLog.description}
                     </p>
